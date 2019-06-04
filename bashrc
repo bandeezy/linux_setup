@@ -110,3 +110,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+source /opt/ros/melodic/setup.bash
+source /lhome/nschwai/workspace/athena/icecc_devel/setup.bash

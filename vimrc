@@ -19,12 +19,15 @@ set expandtab ts=2 sw=2 ai
 " Set visual mouse
 set mouse=v
 
+" Highlight search
+set hlsearch
+
 if has("syntax")
   syntax on
 endif
 
-" Set column for 119 character limit
-set colorcolumn=119
+" Set column for 120 character limit
+set colorcolumn=120
 
 " Jump to last position when reopening a file
 if has("autocmd")
@@ -34,6 +37,10 @@ endif
 " set the runtime path to include Vundle and initialize
 set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
+
+"let g:ycm_python_binary_path = '/usr/bin/python'
+let g:ycm_server_python_interpreter = '/usr/bin/python'
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/vundle.vim'
