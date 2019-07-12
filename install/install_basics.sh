@@ -9,7 +9,7 @@
 # - install google chrome
 # - install spotify client
 echo "Installing terminator, vim, meld, indicator-multiload and -cpufreq"
-sudo apt-get install terminator vim meld indicator-multiload indicator-cpufreq p7zip-full -y
+sudo apt-get install terminator vim meld indicator-multiload indicator-cpufreq p7zip-full tree -y
 echo "Installing Vundle (package manager for vim)"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vimCloning into '/home/riv-01176/.vim/bundle/Vundle.vim'
 echo "Installing google chrome"
