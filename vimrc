@@ -22,6 +22,9 @@ set mouse=v
 " Highlight search
 set hlsearch
 
+" Limit 120 characters per line
+set textwidth=120
+
 if has("syntax")
   syntax on
 endif
@@ -39,7 +42,13 @@ set rtp+=$HOME/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 "let g:ycm_python_binary_path = '/usr/bin/python'
-let g:ycm_server_python_interpreter = '/usr/bin/python'
+"let g:ycm_server_python_interpreter = '/usr/bin/python3'
+let g:ycm_python_interpreter_path = ''
+let g:ycm_python_sys_path = []
+let g:ycm_extra_conf_vim_data = [
+  \ 'g:ycm_python_interpreter_path',
+  \ 'g:ycm_python_sys_path'
+  \]
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
 " let Vundle manage Vundle, required
